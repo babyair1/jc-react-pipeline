@@ -34,7 +34,7 @@ pipeline {
     stage ('Build docker images'){
       steps{    
         script {
-          app = docker.build("sendykris/reactapp-jcde") 
+          app = docker.build("dolachann/reactapp-jcde") 
         }    
       }
     }
@@ -42,7 +42,7 @@ pipeline {
     //stage lima
     stage ('test docker images'){
       steps{    
-        sh 'docker run -d --rm --name testimage -p 8081:80 sendy/reactapp-jcde'   
+        sh 'docker run -d --rm --name testimage -p 8081:80 sendykris/reactapp-jcde'   
         //input message: "Finished test image? (Click procced to continue)"
       }      
     } 
