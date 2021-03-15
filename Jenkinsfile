@@ -1,9 +1,10 @@
 pipeline {
   agent any
 
-//   environment {
-//     CI = true
-//   }
+   environment {
+     //CI = true
+     DOCKER_TAG = getDockerTag()
+   }
 
   stages {
     //stage pertama
@@ -34,7 +35,7 @@ pipeline {
     stage ('Build docker images'){
       steps{    
         script {
-          app = docker.build("dolachann/reactapp-jcde") 
+          app = docker.build ("sendykris/reactapp-jcde") 
         }    
       }
     }
