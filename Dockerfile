@@ -1,10 +1,10 @@
 FROM nginx
 
-#SET WORKING DIREKTORY
+#SET WORKING DIRECTORY
 WORKDIR /usr/share/nginx/html/
 
-# copy file from build directory
+#COPY FILE FROM BUILD DIRECTORY
 COPY build/ .
 
-# expose port 80
+#EXPOSE PORT KE 80
 EXPOSE 80
