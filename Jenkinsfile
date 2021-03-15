@@ -35,7 +35,7 @@ pipeline {
     stage ('Build docker images'){
       steps{    
         script {
-          app = docker.build ("sendykris/reactapp-jcde") 
+          app = docker.build("sendykris/reactapp-jcde") 
         }    
       }
     }
