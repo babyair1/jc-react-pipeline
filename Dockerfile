@@ -1,7 +1,7 @@
 FROM nginx
 
 #SET WORKING DIREKTORY
-WORKDIR /usr/share/nginx/html
+WORKDIR /usr/share/nginx/html/
 
 # copy file from build directory
 COPY build/ .
