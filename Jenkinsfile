@@ -31,9 +31,9 @@ pipeline {
     }
 
     //stage keempat
-    stage ('build docker images'){
+    stage ("build docker images"){
       steps{
-        script{
+        script {
           app = docker.build("sendykris/reactapp-jcde")
         }
       }
