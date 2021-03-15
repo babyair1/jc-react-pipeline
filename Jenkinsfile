@@ -17,9 +17,10 @@ pipeline {
     //stage kedua
     stage ('Test project') {
       steps{
-        sh './jenkins/script/test.sh'
+        sh 'chmod +x jenkins/scripts/test.sh'
+        sh './jenkins/scripts/test.sh'
       }
     } 
-    
+
   }
 }
