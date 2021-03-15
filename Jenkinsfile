@@ -14,5 +14,12 @@ pipeline {
       }
     }
 
+    //stage kedua
+    stage ('Test project') {
+      steps{
+        sh './jenkins/script/test.sh'
+      }
+    } 
+    
   }
 }
