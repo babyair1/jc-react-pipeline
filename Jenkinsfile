@@ -1,9 +1,9 @@
 pipeline {
   agent any
 
-  environment {
-    CI = 'true'
-  }
+//   environment {
+//     CI = true
+//   }
 
   stages {
     //stage pertama
@@ -15,7 +15,7 @@ pipeline {
     }
 
     //stage kedua
-    stage ('Test project') {
+    stage ('Test project'){
       steps{
         echo "run test script"
         // sh 'chmod +x jenkins/scripts/test.sh'
