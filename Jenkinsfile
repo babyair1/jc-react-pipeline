@@ -34,7 +34,7 @@ pipeline {
     //stage empat
     stage ('Build docker images'){
       steps{    
-        script {
+        script{
           app = docker.build("sendykris/reactapp-jcde") 
         }    
       }
